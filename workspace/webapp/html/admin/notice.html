@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>멘토회원 목록</title>
-    <link rel="stylesheet" href="./../../assets/css/admin/mentoMember.css">
-    <script defer src="./../../assets/js/admin/mentoMember.js"></script>
+    <title>공지게시판 목록</title>
+    <link rel="stylesheet" href="./../../assets/css/admin/notice.css">
+    <script defer src="./../../assets/js/admin/notice.js"></script>
 </head>
 
 <body>
@@ -17,43 +17,41 @@
     <main>
         <nav class="mtable">
             <div class="head">
-                <div class="title">멘토회원 목록</div>
+                <div class="title">공지게시판 목록</div>
                 <div class="buttons">
-                    <button id="warnButton">경고주기</button>
+                    <button id="editButton">수정</button>
                     <button id="deleteButton">삭제</button>
                 </div>
             </div>
             <hr>
             <div class="memColumn header">
                 <input type="checkbox" id="selectAll">
-                <p>등급</p>
-                <p class="user-id">아이디</p>
-                <p>닉네임</p>
-                <p>뱃지</p>
-                <p>모니터</p>
-                <p>가입일자</p>
-                <p>누적경고횟수</p>
+                <p>분류</p>
+                <p class="notice-title">글제목</p>
+                <p>작성일</p>
+                <p>조회수</p>
             </div>
             <hr>
             <div class="memColumn">
                 <input type="checkbox" class="item-checkbox">
-                <p>멘토</p>
-                <p class="user-id">bbb123</p>
-                <p>전문가</p>
-                <p>🎇</p>
-                <p>22inch 22m</p>
+                <p>전체</p>
+                <p class="notice-title" onclick="toggleText(this)"><공지>ITASK에 오신 여러분들 환영합니다</p>
                 <p>2025-01-11</p>
-                <p>-</p>
+                <p>188</p>
+            </div>
+            <div class="notice-text" style="display: none;">
+                <p>여기에 글 내용이 들어갑니다. 클릭하면 보이거나 숨겨집니다.</p>
             </div>
             <div class="memColumn">
                 <input type="checkbox" class="item-checkbox">
-                <p>멘토</p>
-                <p class="user-id">bbb123</p>
-                <p>전문가</p>
-                <p>🎇</p>
-                <p>22inch 22m</p>
+                <p>전체</p>
+                <p class="notice-title" onclick="toggleText(this)"><공지>ITASK에 오신 여러분들 환영합니다</p>
                 <p>2025-01-11</p>
-                <p>-</p>
+                <p>188</p>
+
+            </div>
+            <div class="notice-text" style="display: none;">
+                <p>여기에 글 내용이 들어갑니다. 클릭하면 보이거나 숨겨집니다.</p>
             </div>
             <!-- ... 추가적인 회원 목록 ... -->
 

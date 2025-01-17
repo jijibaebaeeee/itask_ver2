@@ -15,10 +15,11 @@ buttons.forEach(button => {
         button.style.color = "#ffffff";
         button.style.backgroundColor = "#d96073";
     });
+});
 
-//파일 업로드
+// 파일 업로드
 uploadButton.addEventListener("click", () => {
-    fileUploadInput.click(); 
+    fileUploadInput.click();
 });
 
 fileUploadInput.addEventListener("change", () => {
@@ -27,5 +28,4 @@ fileUploadInput.addEventListener("change", () => {
     } else {
         uploadBoxLabel.textContent = "첨부파일 선택"; // 파일 없을 경우 기본 텍스트 표시
     }
-});
 });
